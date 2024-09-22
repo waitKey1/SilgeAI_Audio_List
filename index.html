@@ -45,6 +45,19 @@
             width: 100%;
             outline: none;
         }
+        .tag-container {
+            display: flex;
+            gap: 10px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background-color: #eee;
+            color: #555;
+            font-size: 0.8em;
+        }
+
     </style>
 </head>
 <body>
@@ -52,21 +65,33 @@
     <ul class="audio-list">
         <h2 class="divider">FemaleVoice</h2>
         <li class="audio-item">
-            <span>ModelName: zh-CN-XiaoyiNeural</span>
+
+             <div class="tag-container">
+                   <span>ModelName: XiaoyiNeural</span>
+                <span class="tag">软萌</span>
+            </div>
             <audio controls>
                 <source src="./edge-tts/female/zh-CN-XiaoyiNeural.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </li>
         <li class="audio-item">
-            <span>ModelName: zh-CN-XiaoxiaoNeural</span>
+                  <div class="tag-container">
+                   <span>ModelName: XiaoxiaoNeural</span>
+                <span class="tag">偏御姐一点点</span>
+            </div>
+
             <audio controls>
                 <source src="./edge-tts/female/zh-CN-XiaoxiaoNeural.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </li>
         <li class="audio-item">
-            <span>ModelName: shaanxi-XiaoniNeural</span>
+                 <div class="tag-container">
+              <span>ModelName: shaanxi-XiaoniNeural</span>
+                <span class="tag">外国腔</span>
+            </div>
+
             <audio controls>
                 <source src="./edge-tts/female/zh-CN-shaanxi-XiaoniNeural.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -74,7 +99,11 @@
         </li>
 
         <li class="audio-item">
-            <span>ModelName: liaoning-XiaobeiNeural</span>
+                      <div class="tag-container">
+                  <span>ModelName: liaoning-XiaobeiNeural</span>
+                <span class="tag">东北腔</span>
+            </div>
+
             <audio controls>
                 <source src="./edge-tts/female/zh-CN-liaoning-XiaobeiNeural.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -83,33 +112,41 @@
 
         <h2 class="divider">MaleVoice</h2>
         <li class="audio-item">
-            <span>ModelName: YunxiNeural</span>
+            <div class="tag-container">
+                 <span>ModelName: YunxiNeural</span>
+                <span class="tag">御弟风</span>
+            </div>
+
             <audio controls>
-                <source src="./edge-tts/female/zh-CN-YunxiNeural.mp3" type="audio/mpeg">
+                <source src="./edge-tts/male/zh-CN-YunxiNeural.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+
+        <li class="audio-item">
+                      <div class="tag-container">
+           <span>ModelName: YunyangNeural</span>
+                <span class="tag">播音腔</span>
+            </div>
+
+            <audio controls>
+                <source src="./edge-tts/male/zh-CN-YunyangNeural.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </li>
         <li class="audio-item">
-            <span>ModelName: YunyangNeural</span>
-            <audio controls>
-                <source src="./edge-tts/female/zh-CN-YunyangNeural.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </li>
-        <li class="audio-item">
+                      <div class="tag-container">
+
             <span>ModelName: YunjianNeural</span>
+                <span class="tag">播音腔</span>
+            </div>
+
             <audio controls>
-                <source src="./edge-tts/female/zh-CN-YunjianNeural.mp3" type="audio/mpeg">
+                <source src="./edge-tts/male/zh-CN-YunjianNeural.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </li>
-        <li class="audio-item">
-            <span>ModelName: zh-CN-shaanxi-XiaoniNeural</span>
-            <audio controls>
-                <source src="audio8.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </li>
+
     </ul>
 </body>
 </html>
